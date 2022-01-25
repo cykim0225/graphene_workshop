@@ -1,0 +1,15 @@
+#!/bin/sh
+# Sets up local dev environment
+
+set -x
+
+# Install package manager: `poetry`
+pip install poetry
+
+cd graphene_workshop
+
+# Install project dependencies listed in poetry file
+poetry install
+
+# Install pre-commit hooks
+poetry run pre-commit install --install-hooks --overwrite
