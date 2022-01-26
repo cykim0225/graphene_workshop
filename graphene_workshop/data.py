@@ -1,12 +1,12 @@
 from schema.types import Unit, Property
 
-unit_101 = Unit(id="101", squareFeet=700, bedrooms=1, amenity=["RESERVED_PARKING"])
+unit_101 = Unit(id="101", square_feet=700, bedrooms=1, amenity=["RESERVED_PARKING"])
 
 unit_102 = Unit(
-    id="102", squareFeet=1000, bedrooms=2, amenity=["RESERVED_PARKING", "EV_PARKING"]
+    id="102", square_feet=1000, bedrooms=2, amenity=["RESERVED_PARKING", "EV_PARKING"]
 )
 
-unit_203 = Unit(id="103", squareFeet=1500, bedrooms=3)
+unit_203 = Unit(id="103", square_feet=1500, bedrooms=3)
 
 abc_APT = Property(
     id="1234",
