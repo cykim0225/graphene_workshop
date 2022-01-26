@@ -8,7 +8,7 @@ You should have this installed prior to the workshop:
 
 ## Setup
 1. Create the project directory
-2. Clone the repo
+2. Clone the repo using `git clone`
 3. Go to the folder
 5. Run `./bin/setup` which will install Poetry (package manager), install project dependencies using poetry, and set up pre-commit hooks locally
 
