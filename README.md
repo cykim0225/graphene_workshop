@@ -27,7 +27,7 @@ Output:
  * Debugger PIN: 768-535-817
 ```
 
-3. Navigate to `http://127.0.0.5000/graphql` to access the GraphiQL playground.
+3. Navigate to `http://127.0.0.1:5000/graphql` to access the GraphiQL playground.
 4. Type hello in the GraphiQL
 ```
 {
