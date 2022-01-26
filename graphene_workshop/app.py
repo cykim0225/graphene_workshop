@@ -3,10 +3,8 @@ from flask import Flask
 from flask_graphql import GraphQLView
 
 from schema.query import Query
+
 # from schema.mutation import (
-#     CreateConfiguration,
-#     UpsertEntityConfigurations,
-#     RemoveEntityConfiguration,
 #     Mutation,
 # )
 from healthcheck import healthcheck
@@ -19,11 +17,7 @@ def init_app():
     app.debug = True
     app.add_url_rule(
         "/graphql",
-        view_func=GraphQLView.as_view(
-            "graphql",
-            schema=schema,
-            graphiql=True,
-        ),
+        view_func=GraphQLView.as_view("graphql", schema=schema, graphiql=True),
     )
     app.add_url_rule("/healthcheck", "healthcheck", healthcheck)
 

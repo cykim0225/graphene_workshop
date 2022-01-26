@@ -1,4 +1,5 @@
 import graphene
+from schema.types import Property
 
 
 class Query(graphene.ObjectType):
