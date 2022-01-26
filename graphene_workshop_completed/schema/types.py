@@ -8,7 +8,7 @@ class Amenity(graphene.Enum):
 
 class Unit(graphene.ObjectType):
     id = graphene.String(required=True)
-    squareFeet = graphene.Int(required=True)
+    square_feet = graphene.Int(required=True)
     bedrooms = graphene.Int(required=True)
     amenity = graphene.List(Amenity)
 
